@@ -1,0 +1,32 @@
+cd C:\ADB
+fastboot devices
+
+at+creg?\r\n
+atd+735;\r\n
+
+diskpart
+list disk
+select disk 1
+clean
+
+Lenovo A2020a40 FRP
+1) Входим в recovery "Power + vol up"
+2) Выбрать пункт "Reboot to bootloader".
+3) Установить драйверы ADB (Есть в шапке)
+4) Запустить коммандную строку от имени администратора (win+R)
+5) качаем ADB он же fastboot
+6) извлекаем на диск С: в папку adb
+7) набираем в командной строке cd c:/adb 
+8) fastboot devices
+9)fastboot erase config
+10)fastboot reboot
+
+fastboot erase persist
+
+Android 7 Sony
+
+adb shell content insert --uri content://settings/secure --bind name:s:user_setup_complete --bind value:s:1
+
+adb shell am start -n com.google.android.gsf.login/
+
+adb shell am start -n com.google.android.gsf.login.LoginActivity

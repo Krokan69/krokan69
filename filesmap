@@ -1,0 +1,5 @@
+lk.bin /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/lk
+logo.bin /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/logo
+trustzone.bin /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/tee1
+trustzone.bin /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/tee2
+secro.img /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/secro
