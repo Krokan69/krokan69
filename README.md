@@ -1,1 +1,2 @@
-bash <(curl -s https://raw.githubusercontent.com/corbindavenport/nexus-tools/master/install.sh)
+apt-get install android-tools-adb android-tools-fastboot 
+adb - sudo apt-get install android-tools-adb android-tools-fastboot
